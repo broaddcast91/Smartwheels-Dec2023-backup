@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+
+}
+
+/* gallery slider  */
+.image-gallery-slides {
+  border-radius: 15px;
+}
+
+.image-gallery-thumbnail-image {
+  border-radius: 4px;
+}
+
+.image-gallery-thumbnail {
+  border: none !important;
+  padding: 0 5px !important;
+  border-radius: 15px !important;
+  opacity: 0.5;
+}
+
+.image-gallery-thumbnail:hover {
+  border: none !important;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  opacity: 1;
+  border: none !important;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 30px !important;
+  width: 30px !important;
+  color: white;
+  font-weight: 800;
+  background-color: rgba(12, 18, 39, 0.4);
+  opacity: 0.8;
+  border-radius: 100%;
+}
+
+.image-gallery-left-nav .image-gallery-svg:hover,
+.image-gallery-right-nav .image-gallery-svg:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+@media screen and (max-width: 820px) {
+  .altoslider {
+    display: none;
+  }
+}
+
+/* Pagination css */
+.paginationButtons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.paginationButtons>li {
+  margin-left: 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.activePage {
+  background-color: #f01b23;
+  color: #fff;
+  border: none !important;
+}
+
+.disabledPage,
+.disabledPage>a {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

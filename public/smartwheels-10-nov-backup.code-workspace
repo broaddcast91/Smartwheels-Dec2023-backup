@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../Krishna/saboo-arena-aug-2022-main"
+	}
+],
+  "settings": {
+    "terminal.integrated.fontFamily": "monospace"
+  }
+}
